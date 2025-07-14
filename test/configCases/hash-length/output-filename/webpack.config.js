@@ -223,12 +223,3 @@ module.exports = [
 		}
 	}
 ];
-
-for (const options of module.exports) {
-	options.plugins = options.plugins || [];
-	options.plugins.push(
-		new webpack.DefinePlugin({
-			NAME: JSON.stringify(options.name)
-		})
-	);
-}

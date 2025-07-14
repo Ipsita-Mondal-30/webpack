@@ -48,7 +48,7 @@ module.exports = (env = "development") => ({
 				source: () => `
 const value: string = "value-from-typescript";
 
-export default value;`
+export default value;
 			},
 			routes: {
 				source(loaderContext) {
